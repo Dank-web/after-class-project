@@ -1,0 +1,62 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #001F3F; /* Deep ocean blue */
+    color: #CFE8F3; /* Soft aqua text */
+}
+
+h1 {
+    color: #00BFFF; /* Bright ocean blue */
+}
+
+/* Attribute selector - links */
+a {
+    color: #66AACC; /* Muted aqua */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1CA9C9; /* Brighter aqua on hover */
+}
+
+/* Child selector - bold list items */
+ul > li {
+    font-weight: bold;
+}
+
+/* Sibling selector - style paragraph after h1 */
+h1 + p {
+    background-color: #003366; /* Slightly lighter ocean blue */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* :hover pseudo-class - list item hover turns coral */
+ul li:hover {
+    color: #FF6347; /* Coral */
+}
+
+/* :nth-child(n) pseudo-class - style the 5th list item */
+ul li:nth-child(5) {
+    background-color: #004466; /* Dark teal background */
+}
+
+/* :not selector - underline all paragraphs except the first */
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* ::before pseudo-element - change emoji to fit underwater theme */
+a::after {
+    content: "🌊 "; /* Wave emoji before list items */
+}
+
+/* ::after pseudo-element - change emoji to ocean symbol */
+ul li::before {
+    content: " 🐠"; /* Tropical fish emoji after list items */
+}
+
+/* ::first-letter pseudo-element - make first letter larger and ocean-colored */
+p::first-letter {
+    font-size: 200%;
+    color: #00CED1; /* Dark turquoise */
+}
