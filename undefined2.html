@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <p>Setting a default value to a parameter.</p>
+        <p id="demo"></p>
+        <script>
+            function myfunction(x,y,z) {
+                if (y=== undefined) {
+                    y=2;
+                }
+                if (z=== undefined) {
+                    z=3
+                }
+                return x * y + z;
+            }
+            document.getElementById("demo").innerHTML = myfunction(5,12,4);
+        </script>
+    </body>
+</body>
+</html>
