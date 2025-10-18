@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Finding the largest number with help of argument Objects</p>
+    <p id="result"></p>
+    <script>
+        function sumofnum() {
+            var sum = 0;
+            for(i = 0; i < arguments.length; i++) {
+               {
+                    sum = arguments[i];
+                }
+            }
+            return sum;
+        }
+        document.getElementById("result").innerHTML = sumofnum(8, 4, 50, 6, 2);
+    </script>
+</body>
+</html>
