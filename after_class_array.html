@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <script>
+        var Codingal = ["Apple","Banana","Rice"];
+
+        document.getElementById("demo").innerHTML = Codingal[1];
+
+          var fruits = ["Banana","Orange","Apple","Mango","abc"];
+
+
+        document.getElementById("myjoin").innerHTML = fruits.join(" * ");
+        document.getElementById("myfirstpop").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("mysecondpop").innerHTML = fruits;
+    </script>
+</body>
+</html>
