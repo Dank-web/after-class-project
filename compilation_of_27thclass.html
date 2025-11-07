@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to evaluate/execute JavaScript code/expression.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="result"></p>
+    <script>
+        function myFunction() {
+            var x = 10;
+            var y = 20;
+            var a = eval("x + y") ;
+            var b = eval("2 * 2") ;
+            var c = eval("y - x") ;
+
+            var res = a + b + c; //concatenates the string
+            document.getElementById("result").innerHTML = res
+        }
+    </script>
+    <p>Multiply every element in array with 10:</p>
+    <p id="product_value"></p>
+    <script>
+        var numbers = [28, 5, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 90, 94, 96, 98, 99];
+
+        function myFunction(num) {
+            return num * 10;
+        }
+        var newarray = numbers.map(myFunction);
+        document.getElementById("product_value").innerHTML = newarray;
+    </script>
+    <h2>JavaScript Array Sort</h2>
+    <p>Click The button to sort the array in ascending order.</p>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="result"></p>
+    <script>
+        var points = [40, 100, 1, 98, 6, 15, 25, 99, 50, 75, 80, 2, 3, 4, 5]
+        document.getElementById("result").innerHTML = points;
+        function ascending() {
+            points.sort(function(a,b){return a - b});
+            document.getElementById("result").innerHTML = points;
+        }
+        function descending() {
+            points.sort(function(a, b){return b - a});
+            document.getElementById("result").innerHTML = points;
+        }
+    </script>
+</body>
+</html>
