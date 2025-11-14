@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javaScript async / await</h2>
+    <h1 id="result"></h1>
+    <script>
+        async function add(a,b) {
+            let response = await a + b;
+            display(response);
+        }
+        function display(some) {
+            document.getElementById("result").innerHTML = some;
+        }
+        add(5,20);
+    </script>
+     <h2>Convert a javaScript object into a JSON string, and send it to the server.</h2>
+    <p id="result"></p>
+    <script>
+        var myObj = { name: "Riya", age: 12, greade: 7 };
+        var myJSON = JSON.stringify(myObj); //converts object to JSON for sending data
+        var newObj = JSON.parse(myJSON); //converts JSON into object while receiving data
+        document.getElementById("result").innerHTML = newObj.name;
+    </script>
+     <h2>JavaScript Callbacks</h2>
+    <p>Do a calculation and then display the result.</p>
+    <p id="result"></p>
+    <script>
+      function myDisplayer(value) {
+        document.getElementById("result").innerHTML = value;
+      }
+      function myCalculator(num1, num2, myCallback) {
+        let sum = num1 + num2;
+        myCallback(sum);
+      }
+      myCalculator(5, 5, myDisplayer);
+    </script>
+</body>
+</html>
