@@ -1,0 +1,1 @@
+print("Hi my name is Ayaan and I am a passinate programer trying various programing fields and languages. I can mainly write front-end like HTML, CSS, Bootstrap, JavaScript. but now I am trying python")
